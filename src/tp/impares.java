@@ -6,11 +6,24 @@ public class impares {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Ingrese numero:");
-		int num = sc.nextInt();
-	
+		int contador=0;
+		int hasta =1;
 		
-		while(num !=0) {
+		System.out.println("Ingrese cuantos numeros quiere ingresar: ");
+		hasta = sc.nextInt();
+		
+		int num = 1;
+		
+		
+		
+	
+		while(contador<hasta) {
+			
+			System.out.println("Ingrese numero:");
+			num = sc.nextInt();
+			if(num==0) {
+				break;
+			}
 			
 			if(num % 2 == 0) {
 			System.out.println("es par");
@@ -18,8 +31,8 @@ public class impares {
 			else {
 				System.out.println("es impar");
 			}
-			System.out.println("Ingrese numero");
-			num = sc.nextInt();
+			
+			contador++;
 					
 		}
 		sc.close();
